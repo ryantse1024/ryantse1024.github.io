@@ -19,8 +19,8 @@
     .hero img { width: 100%; max-height: 80vh; object-fit: cover; }
     .hero .overlay { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; }
     .hero h1 { font-size: 3rem; text-shadow: 0 0 10px rgba(0,0,0,0.7); }
-    /* Audio */
-    audio { position: fixed; bottom: 1rem; left: 1rem; }
+    /* Audio (hidden) */
+    audio { display: none; }
     /* Footer */
     footer { background: #333; color: white; text-align: center; padding: 1rem; margin-top: 2rem; }
   </style>
@@ -37,20 +37,20 @@
 
   <!-- Hero with Big Photo and Text -->
   <section class="hero">
-    <img src="our-photo.jpg" alt="Us Together">
+    <img src="src/our-photo.jpg" alt="Us Together">
     <div class="overlay">
-      <h1>Happy 2 Years ❤️</h1>
+      <h1>Happy 2 Years Izzy ❤️</h1>
     </div>
   </section>
 
-  <!-- Background Music -->
-  <audio controls autoplay loop>
-    <source src="anniversary-song.mp3" type="audio/mpeg">
+  <!-- Background Music Auto-Play -->
+  <audio autoplay loop>
+    <source src="src/anniversary-song.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
 
   <footer>
-    <p>© 2025 Our Journey</p>
+    <p>© Ryan Loves Izzy!!!</p>
   </footer>
 </body>
 </html>
