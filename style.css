@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@400;700&display=swap');
+
+/* Reset & Global */
+body, h1, h2, p, ul { margin: 0; padding: 0; }
+body { font-family: 'Open Sans', sans-serif; background: #fff; color: #333; }
+a { text-decoration: none; }
+
+/* Buttons */
+.btn {
+  background: rgba(255, 255, 255, 0.8);
+  color: #ff6f61;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  margin: 0 0.5rem;
+  font-weight: bold;
+  transition: opacity 0.2s;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* Hero Section */
+.hero {
+  background: url('src/our-photo.jpg') center/cover no-repeat;
+  height: 100vh;
+  position: relative;
+}
+.hero .overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+.hero .subtitle {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.hero h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 4rem;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  margin-top: 1rem;
+}
+
+/* Hide Audio Controls */
+audio {
+  display: none;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
