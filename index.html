@@ -3,111 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>[Girlfriend's Name]'s Website</title>
+  <title>Happy Two Year Anniversary!</title>
   <style>
-    /* Global Styles */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      color: #333;
-      background: #f9f9f9;
-    }
-    /* Button Styles */
-    .btn {
-      background: #ff6f61;
-      color: white;
-      border: none;
-      padding: 0.5rem 1rem;
-      border-radius: 0.25rem;
-      text-decoration: none;
-      font-weight: bold;
-      margin: 0 0.5rem;
-      display: inline-block;
-      cursor: pointer;
-    }
-    .btn:hover {
-      opacity: 0.9;
-    }
-    /* Header and Navigation */
-    header {
-      background: #ff6f61;
-      color: white;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    nav {
-      margin-top: 1rem;
-    }
-    /* Main Content Container */
-    .container {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    /* About Section */
-    .about img {
-      max-width: 200px;
-      border-radius: 50%;
-      display: block;
-      margin: 1rem auto;
-    }
-    /* Gallery Section */
-    .gallery img {
-      max-width: 100%;
-      height: auto;
-      margin-bottom: 1rem;
-    }
+    /* Reset & Global */
+    body, h1, h2, p, ul { margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; background: #fff; color: #333; }
+    a { text-decoration: none; }
+    /* Header & Nav */
+    header { background: #ff6f61; padding: 1rem; text-align: center; }
+    nav { margin-top: 0.5rem; }
+    .btn { background: white; color: #ff6f61; padding: 0.5rem 1rem; border-radius: 0.25rem; margin: 0 0.5rem; font-weight: bold; }
+    .btn:hover { opacity: 0.9; }
+    /* Hero Section */
+    .hero { position: relative; text-align: center; }
+    .hero img { width: 100%; max-height: 80vh; object-fit: cover; }
+    .hero .overlay { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; }
+    .hero h1 { font-size: 3rem; text-shadow: 0 0 10px rgba(0,0,0,0.7); }
+    /* Audio */
+    audio { position: fixed; bottom: 1rem; left: 1rem; }
     /* Footer */
-    footer {
-      background: #333;
-      color: white;
-      text-align: center;
-      padding: 1rem 0;
-    }
+    footer { background: #333; color: white; text-align: center; padding: 1rem; margin-top: 2rem; }
   </style>
 </head>
 <body>
   <header>
-    <h1>Hello, I'm [Girlfriend's Name]!</h1>
+    <h2>Happy Two Year Anniversary!</h2>
     <nav>
       <a href="index.html" class="btn">Home</a>
-      <a href="about.html" class="btn">About</a>
       <a href="gallery.html" class="btn">Gallery</a>
-      <a href="contact.html" class="btn">Contact</a>
+      <a href="affirmations.html" class="btn">Affirmations</a>
     </nav>
   </header>
 
-  <div class="container">
-    <!-- Home Section -->
-    <section id="home">
-      <p>Welcome to my personal website. Use the buttons above to navigate!</p>
-    </section>
+  <!-- Hero with Big Photo and Text -->
+  <section class="hero">
+    <img src="our-photo.jpg" alt="Us Together">
+    <div class="overlay">
+      <h1>Happy 2 Years ❤️</h1>
+    </div>
+  </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-      <h2>About Me</h2>
-      <img src="profile.jpg" alt="[Girlfriend's Name]">
-      <p>Write a brief bio about your girlfriend here.</p>
-    </section>
-
-    <!-- Gallery Section -->
-    <section id="gallery" class="gallery">
-      <h2>Gallery</h2>
-      <img src="photo1.jpg" alt="Photo 1">
-      <img src="photo2.jpg" alt="Photo 2">
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:girlfriend@example.com">girlfriend@example.com</a></p>
-      <p>Follow me on <a href="https://instagram.com/username" target="_blank">Instagram</a></p>
-    </section>
-  </div>
+  <!-- Background Music -->
+  <audio controls autoplay loop>
+    <source src="anniversary-song.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
 
   <footer>
-    <p>© 2025 [Girlfriend's Name]. All rights reserved.</p>
+    <p>© 2025 Our Journey</p>
   </footer>
 </body>
 </html>
