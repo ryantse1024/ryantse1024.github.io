@@ -101,6 +101,11 @@ body{
   z-index: 10;
 }
 
+.timeline-content img{
+  width: 100%;
+  border-radius: 5px;
+}
+
 .text-content{
   padding: 20px 30px;
   box-shadow: 0 5px 10px #191919;
