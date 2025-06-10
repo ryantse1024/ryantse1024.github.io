@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Ryan X Izzy</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Timeline Container */
+    .timeline {
+      position: relative;
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 2rem 0;
+    }
+    /* Vertical line */
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 4px;
+      background-color: #ff6f61;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -2px;
+    }
+    /* Individual items */
+    .timeline-item {
+      padding: 1rem 2rem;
+      position: relative;
+      width: 50%;
+    }
+    /* Left side */
+    .timeline-item:nth-child(odd) {
+      left: 0;
+    }
+    /* Right side */
+    .timeline-item:nth-child(even) {
+      left: 50%;
+    }
+    /* Circles on timeline */
+    .timeline-item::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: #ff6f61;
+      border-radius: 50%;
+      top: 1rem;
+      right: -10px;
+    }
+    /* Invert circle for right items */
+    .timeline-item:nth-child(even)::after {
+      left: -10px;
+    }
+    /* Content box */
+    .timeline-content {
+      padding: 1rem;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .timeline-content img {
+      width: 100%;
+      border-radius: 4px;
+      margin-bottom: 0.5rem;
+    }
+    /* Responsive adjustments */
+    @media screen and (max-width: 768px) {
+      .timeline::after {
+        left: 8px;
+      }
+      .timeline-item {
+        width: 100%;
+        padding-left: 2.5rem;
+        padding-right: 1rem;
+      }
+      .timeline-item:nth-child(even) {
+        left: 0;
+      }
+      .timeline-item::after {
+        left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="btn">Home</a>
+      <a href="gallery.html" class="btn">Gallery</a>
+      <a href="affirmations.html" class="btn">Affirmations</a>
+    </nav>
+  </header>
+
+  <main class="timeline">
+    <!-- Moment 1 -->
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <img src="src/moment1.jpg" alt="Moment 1">
+        <p>Our first trip together to the beach, June 2023 🌊</p>
+      </div>
+    </div>
+    <!-- Moment 2 -->
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <img src="src/moment2.jpg" alt="Moment 2">
+        <p>That cozy movie night at home ❤️</p>
+      </div>
+    </div>
+    <!-- Moment 3 -->
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <img src="src/moment3.jpg" alt="Moment 3">
+        <p>Romantic rooftop dinner under the stars 🌟</p>
+      </div>
+    </div>
+    <!-- Add more here after -->
+  </main>
+
+</body>
+</html>
