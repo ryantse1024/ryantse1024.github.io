@@ -55,6 +55,7 @@ body{
   100%{
     opacity: 1;
     transform: translateY(0px); 
+  }
 }
 
 .container-right{
@@ -75,6 +76,7 @@ body{
   100%{
     opacity: 1;
     transform: translateY(0px); 
+  }
 }
 
 .container-left::before{
@@ -96,7 +98,7 @@ body{
   width: 20px;
   background: linear-gradient(#ff00e1, #ddff00);
   top: 0;
-  left: -12.5px:
+  left: -12.5px;
   border-radius: 50%;
   z-index: 10;
 }
