@@ -38,7 +38,7 @@ body{
   }
 }
 
-.container{
+.container-left{
   width: 50%;
   position: relative;
   padding: 10px 20px;
@@ -57,11 +57,18 @@ body{
     transform: translateY(0px); 
 }
 
-.container:nth-child(even){
-  left: 50%;
+.container-right{
+  right: -50%;
+  width: 50%;
+  position: relative;
+  padding: 10px 20px;
+  animation: Animate-Container 1s linear forwards;
+  opacity: 0;
+  animation-delay: var(--dly);
+  background: red;
 }
 
-.container:nth-child(odd)::before{
+.container-left::before{
   content: "";
   position: absolute;
   height: 20px;
@@ -73,7 +80,7 @@ body{
   z-index: 10;
 }
 
-.container:nth-child(even)::before{
+.container-right::before{
   content: "";
   position: absolute;
   height: 20px;
