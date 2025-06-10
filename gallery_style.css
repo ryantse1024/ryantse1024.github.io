@@ -15,7 +15,6 @@ body{
   width: 1000px;
   margin: 100px auto;
   position: relative;
-  background: green;
 }
 
 .time-line::after{
@@ -46,7 +45,6 @@ body{
   animation: Animate-Containerleft 1s linear forwards;
   opacity: 0;
   animation-delay: var(--dly);
-  background: red;
 }
 @keyframes Animate-Containerleft{
   0%{
@@ -67,7 +65,6 @@ body{
   animation: Animate-Containerright 1s linear forwards;
   opacity: 0;
   animation-delay: var(--dly);
-  background: red;
 }
 @keyframes Animate-Containerright{
   0%{
