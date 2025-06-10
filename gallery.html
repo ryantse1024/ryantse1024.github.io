@@ -5,135 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gallery | Ryan ❤️ Izzy</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    /* Timeline Container */
-    .timeline {
-      position: relative;
-      max-width: 1500px;
-      margin: 2rem auto;
-      padding: 2rem 0;
-    }
-    /* Vertical line */
-    .timeline::after {
-      content: '';
-      position: absolute;
-      width: 4px;
-      background-color: #ff6f61;
-      top: 0;
-      bottom: 0;
-      left: 50%;
-    }
-    /* Individual items */
-    .timeline-item {
-      padding: 1rem 2rem;
-      position: relative;
-      width: 50%;
-    }
-
-    /* Circles on timeline */
-    .timeline-item::after {
-      content: '';
-      position: absolute;
-      width: 20px;
-      height: 20px;
-      background-color: #ff6f61;
-      border-radius: 50%;
-      left: 50%;
-      top: 1rem;
-    }
-    
-    /* Left side */
-    .timeline-item:nth-child(odd) {
-      left: 0;
-    }
-    /* Right side */
-    .timeline-item:nth-child(even) {
-      left: 50%;
-    }
-    
-    /* Content box */
-    .timeline-content {
-      padding: 1rem;
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-    .timeline-content img {
-      width: 100%;
-      border-radius: 4px;
-      margin-bottom: 0.5rem;
-    }
-    /* Responsive adjustments */
-    @media screen and (max-width: 768px) {
-      .timeline::after {
-        left: 8px;
-      }
-      .timeline-item {
-        width: 100%;
-        padding-left: 2.5rem;
-        padding-right: 1rem;
-      }
-      .timeline-item:nth-child(even) {
-        left: 0;
-      }
-      .timeline-item::after {
-        left: 0;
-      }
-    }
-  </style>
 </head>
 <body>
+
   <header>
     <nav>
       <a href="index.html" class="btn">Home</a>
       <a href="gallery.html" class="btn">Gallery</a>
       <a href="affirmations.html" class="btn">Affirmations</a>
+      <a hred="game.html" class="btn">Game</a>
     </nav>
   </header>
-
-  <main class="timeline">
-    <!-- Moment 1 -->
-    <div class="timeline-item">
-      <div class="timeline-content">
-        <p>June 11th, 2023</p>
-        <img src="src/moment1.jpg" alt="Moment 1">
+  
+  <section class="time-line">
+    <div class="container">
+      <div class="text-content">
+        <h2>June 11th, 2023</h2>
         <p>Izzy officially steps into my life :)</p>
       </div>
     </div>
-    <!-- Moment 1 -->
-    <div class="timeline-item">
-      <div class="timeline-content">
-        <p>September 30th, 2023</p>
-        <img src="src/moment1.jpg" alt="Moment 1">
+
+    <div class="container", style="--dly:1s">
+      <div class="text-content">
+        <h2>September 30th, 2023</h2>
         <p>First time meeting in-person as a couple! Thank you for coming to visit me at Cornell ❤️ </p>
       </div>
     </div>
-    <!-- Moment 1 -->
-    <div class="timeline-item">
-      <div class="timeline-content">
-        <p>November 21, 2023</p>
-        <img src="src/moment1.jpg" alt="Moment 1">
-        <p>First Thanksgiving, and first time staying over with the family! </p>
+
+    <div class="container", style="--dly:2s">
+      <div class="text-content">
+        <h2>November 21, 2023</h2>
+        <p>First Thanksgiving, and first time staying over with the family!</p>
       </div>
     </div>
-    <!-- Moment 2 -->
-    <div class="timeline-item">
-      <div class="timeline-content">
-        <p>June 11th, 2024</p>
-        <img src="src/moment2.jpg" alt="Moment 2">
-        <p>One-Year Anniversary! And we are at home this time!</p>
-      </div>
-    </div>
-    <!-- Moment 3 -->
-    <div class="timeline-item">
-      <div class="timeline-content">
-        <p>June 11th, 2025</p>
-        <img src="src/moment3.jpg" alt="Moment 3">
-        <p>To so many more years together :))</p>
-      </div>
-    </div>
-    <!-- To add later -->
-  </main>
   
 </body>
 </html>
