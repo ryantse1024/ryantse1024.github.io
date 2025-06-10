@@ -42,12 +42,12 @@ body{
   width: 50%;
   position: relative;
   padding: 10px 20px;
-  animation: Animate-Container 1s linear forwards;
+  animation: Animate-Containerleft 1s linear forwards;
   opacity: 0;
   animation-delay: var(--dly);
   background: red;
 }
-@keyframes Animate-Container{
+@keyframes Animate-Containerleft{
   0%{
     opacity: 0;
     transform: translateY(-30px);
@@ -62,10 +62,19 @@ body{
   width: 50%;
   position: relative;
   padding: 10px 20px;
-  animation: Animate-Container 1s linear forwards;
+  animation: Animate-Containerright 1s linear forwards;
   opacity: 0;
   animation-delay: var(--dly);
   background: red;
+}
+@keyframes Animate-Containerright{
+  0%{
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px); 
 }
 
 .container-left::before{
