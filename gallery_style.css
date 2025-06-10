@@ -27,7 +27,6 @@ body{
   background: linear-gradient(#ff00e1, #ddff00);
   border-radius: 50px;
   animation: LineAnimated 5s linear forwards;
-  z-index: -1;
 }
 @keyframes LineAnimated{
   0%{
