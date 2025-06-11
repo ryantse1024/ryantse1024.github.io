@@ -9,7 +9,7 @@
     /* Page‐specific styles for envelopes */
     .affirmations {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      grid-template-columns: repeat(2, 1fr);
       gap: 1rem;
       padding: 2rem;
     }
@@ -36,10 +36,10 @@
       box-shadow: 0 5px 10px #191919;
     }
     .front {
-      background: url('src/envelope.png') center/contain no-repeat #fff;
+      background: #1f1f1f;
     }
     .back {
-      background: #fff;
+      background: #1f1f1f;
       transform: rotateY(180deg);
       display: flex;
       flex-direction: column;
@@ -57,13 +57,6 @@
   </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="index.html" class="btn">Home</a>
-      <a href="gallery.html" class="btn">Gallery</a>
-      <a href="affirmations.html" class="btn">Affirmations</a>
-    </nav>
-  </header>
 
   <main class="affirmations">
     <div class="card" onclick="this.classList.toggle('open')">
