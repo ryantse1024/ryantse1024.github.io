@@ -23,7 +23,7 @@ body{
   right: 50%;
   height: 100%;
   width: 5px;
-  background: linear-gradient(#ff00e1, #ddff00);
+  background: linear-gradient(#04d9ff, #ddff00);
   top: 0;
   border-radius: 50px;
   animation: LineAnimated 15s linear forwards;
@@ -82,7 +82,7 @@ body{
   position: absolute;
   height: 20px;
   width: 20px;
-  background: linear-gradient(#ff00e1, #ddff00);
+  background: linear-gradient(#04d9ff, #ddff00);
   top: 0;
   right: -7px;
   border-radius: 50%;
@@ -94,7 +94,7 @@ body{
   position: absolute;
   height: 20px;
   width: 20px;
-  background: linear-gradient(#ff00e1, #ddff00);
+  background: linear-gradient(#04d9ff, #ddff00);
   top: 0;
   left: -12.5px;
   border-radius: 50%;
