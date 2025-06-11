@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coupons | Ryan❤Izzy</title>
+  <link rel="stylesheet" href="gallery_style.css">
+  <style>
+    /* Page‐specific styles for envelopes */
+    .affirmations {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 1rem;
+      padding: 2rem;
+    }
+    .card {
+      cursor: pointer;
+      perspective: 600px;
+    }
+    .card-inner {
+      position: relative;
+      width: 100%;
+      height: 180px;
+      transform-style: preserve-3d;
+      transition: transform 0.6s;
+    }
+    .card.open .card-inner {
+      transform: rotateY(180deg);
+    }
+    .card-face {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 8px;
+      box-shadow: 0 5px 10px #191919;
+    }
+    .front {
+      background: url('src/envelope.png') center/contain no-repeat #fff;
+    }
+    .back {
+      background: #fff;
+      transform: rotateY(180deg);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+    .back img {
+      max-width: 60%;
+      margin-top: 0.5rem;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="btn">Home</a>
+      <a href="gallery.html" class="btn">Gallery</a>
+      <a href="affirmations.html" class="btn">Affirmations</a>
+    </nav>
+  </header>
+
+  <main class="affirmations">
+    <div class="card" onclick="this.classList.toggle('open')">
+      <div class="card-inner">
+        <div class="card-face front"></div>
+          <h2>Hungry? Make Ryan cook you a meal!</h2>
+        <div class="card-face back">
+          <p>Use this coupon to have Ryan cook you any meal you want. Terms and conditions apply. </p>
+          <p>Note: only reedeemable once. Expiry date: 6/11/2026</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" onclick="this.classList.toggle('open')">
+      <div class="card-inner">
+        <div class="card-face front"></div>
+          <h2>Nothing to do this winter? Go to Japan!</h2>
+        <div class="card-face back">
+          <p>Use this coupon to have Ryan book you yet another trip to Japan :) Maybe this time we can go eat good food at Tokyo too!</p>
+          <p>Note: only reedemable once. Expiry date: 2/1/2026</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" onclick="this.classList.toggle('open')">
+      <div class="card-inner">
+        <div class="card-face front"></div>
+          <h2>Bored this summer? Watch a movie!</h2>
+        <div class="card-face back">
+          <p>Use this coupon to have Ryan set up a movie date with you! Food included ;)</p>
+          <p>Note: reedemable up to 10 times within valid time period. Expiry date: N/A</p>
+        </div>
+      </div>
+    </div>
+
+  <div class="card" onclick="this.classList.toggle('open')">
+      <div class="card-inner">
+        <div class="card-face front"></div>
+          <h2>Feeling down?</h2>
+        <div class="card-face back">
+          <p>Use this coupon to instantly redeem a motivational paragraph or speech, delivered right to you!</p>
+          <p>Note: infinitely redeemable because I'd do that for free any day. Expiry date: N/A</p>
+        </div>
+      </div>
+    </div>
+
+  <div class="card" onclick="this.classList.toggle('open')">
+      <div class="card-inner">
+        <div class="card-face front"></div>
+          <h2>Sun hurting your eyes? Get Gentle Monster sunglasses 50% off!!!</h2>
+        <div class="card-face back">
+          <p>Use this coupon to buy a pair of sunglasses from Gentle Monster at half price! What a steal!</p>
+          <p>Note: Shipping may take up to a month. Expiry date: 7/21/2025</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" onclick="this.classList.toggle('open')">
+      <div class="card-inner">
+        <div class="card-face front"></div>
+          <h2>Feeling lucky? Get a free surprise date!</h2>
+        <div class="card-face back">
+          <p>Use this coupon to go on a mystery date with Ryan!</p>
+          <p>Note: only redeemable once. Expiry date: 9/1/2025</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" onclick="this.classList.toggle('open')">
+      <div class="card-inner">
+        <div class="card-face front"></div>
+          <h2>Feeling lucky? Get a free surprise date!</h2>
+        <div class="card-face back">
+          <p>Use this coupon to go on a mystery date with Ryan!</p>
+          <p>Note: only redeemable once. Expiry date: 9/1/2025</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" onclick="this.classList.toggle('open')">
+      <div class="card-inner">
+        <div class="card-face front"></div>
+          <h2>Feeling sad? Free cuddles!</h2>
+        <div class="card-face back">
+          <p>Use this coupon to cuddle!</p>
+          <p>Note: infinitely redeemable. Expiry date: N/A</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" onclick="this.classList.toggle('open')">
+      <div class="card-inner">
+        <div class="card-face front"></div>
+          <h2>:)</h2>
+        <div class="card-face back">
+          <p>Use this coupon for a fun time :)</p>
+          <p>Note: May only be used up to 2 times per day. Expiry date: N/A</p>
+        </div>
+      </div>
+    </div>
+
+    <div class = "buttons">
+      <button class="btn" id = "homeButton" onclick="nextPage()">Home</button>
+      <script>
+        function nextPage() {
+          window.location.href = "index.html";
+        }
+      </script>
+    </div>
+    
+  </main>
+
+</body>
+</html>
