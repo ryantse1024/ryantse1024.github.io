@@ -134,7 +134,7 @@ body{
 
 .btn {
     box-shadow: 0 5px 10px #191919;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     padding: 15px 32px;
     text-align: center;
     display: inline-block;
